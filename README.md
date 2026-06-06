@@ -34,20 +34,20 @@ Child Content Guardian is a privacy-first, local-inference system designed to pr
 - Ollama (if using local LLM)
 
 ### 2. Installation
-`ash
+`
 git clone https://github.com/dungnotnull/child-content-guardian-agent.git
 cd child-content-guardian-agent
 uv sync
 `
 
 ### 3. Configuration
-`ash
+`
 cp .env.example .env
 `
 Edit .env to set your API keys and preferred LLM provider.
 
 ### 4. Running the Server
-`ash
+`
 uv run python src/api/main.py
 `
 
