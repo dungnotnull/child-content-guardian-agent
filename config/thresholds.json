@@ -1,0 +1,41 @@
+{
+  "age_bands": {
+    "early_childhood": {
+      "age_range": [3, 6],
+      "thresholds": {
+        "toxicity": 0.3,
+        "nsfw": 0.2,
+        "violence": 0.2,
+        "scam": 0.2,
+        "brainrot": 0.5
+      },
+      "logic": "STRICT"
+    },
+    "middle_childhood": {
+      "age_range": [7, 12],
+      "thresholds": {
+        "toxicity": 0.5,
+        "nsfw": 0.4,
+        "violence": 0.4,
+        "scam": 0.4,
+        "brainrot": 0.7
+      },
+      "logic": "MODERATE"
+    },
+    "adolescent": {
+      "age_range": [13, 17],
+      "thresholds": {
+        "toxicity": 0.7,
+        "nsfw": 0.6,
+        "violence": 0.6,
+        "scam": 0.6,
+        "brainrot": 0.9
+      },
+      "logic": "RELAXED"
+    }
+  },
+  "global_defaults": {
+    "fallback_decision": "WARN",
+    "critical_block_threshold": 0.9
+  }
+}

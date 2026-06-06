@@ -1,0 +1,28 @@
+[project]
+name = \"child-content-guardian\"
+version = \"0.1.0\"
+description = \"AI-powered child content guardian for local filtering and monitoring\"
+readme = \"README.md\"
+requires-python = \">=3.11\"
+dependencies = [
+    \"fastapi\",
+    \"uvicorn[standard]\",
+    \"pydantic\",
+    \"sqlalchemy\",
+    \"aiosqlite\",
+    \"transformers\",
+    \"torch\",
+    \"onnxruntime\",
+    \"pillow\",
+    \"opencv-python\",
+    \"python-multipart\",
+    \"pytest\",
+    \"pytest-asyncio\",
+]
+
+[tool.uv]
+dev-dependencies = [
+    \"ruff\",
+    \"mypy\",
+    \"pytest-cov\",
+]
